@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Вирусы — беда XXI века</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #fff;
+}
+
+/* Навигация */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+/* Слайды */
+section {
+    min-height: 100vh;
+    padding: 120px 80px;
+    display: flex;
+    align-items: center;
+}
+
+/* Фоновые слайды */
+.bg {
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.7);
+    padding: 60px;
+    border-radius: 20px;
+    max-width: 1000px;
+}
+
+/* Контент */
+h1 { font-size: 56px; color: #1abc9c; margin-bottom: 25px; }
+h2 { font-size: 42px; color: #1abc9c; margin-bottom: 20px; }
+p, li { font-size: 22px; line-height: 1.6; }
+
+ul { margin-top: 15px; }
+
+/* Слайд с картинкой сбоку */
+.slide-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+}
+
+/* ОБЩИЙ стиль картинок */
+.slide-content img {
+    border-radius: 20px;
+}
+
+/* НУЖНЫЕ РАЗМЕРЫ ИЗОБРАЖЕНИЙ */
+.virus-structure {
+    width: 1024px;
+    height: 529px;
+    object-fit: contain;
+}
+
+.prevention-img {
+    width: 1024px;
+    height: 529px;
+    object-fit: contain;
+}
+
+/* Цветные фоны */
+.dark { background: #111; }
+.blue { background: #0b2c3d; }
+.green { background: #0f3d2e; }
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+    <a href="#intro">Введение</a>
+    <a href="#virus">Вирусы</a>
+    <a href="#danger">Опасность</a>
+    <a href="#prevention">Профилактика</a>
+</nav>
+</header>
+
+<!-- ТИТУЛЬНЫЙ СЛАЙД -->
+<section id="intro" class="bg" style="background-image:url('img/virus-bg.jpg')">
+    <div class="overlay">
+        <h1>Вирусы — беда XXI века</h1>
+        <p>
+            В XXI веке вирусы стали одной из самых серьёзных глобальных проблем человечества.
+            Они вызывают эпидемии и пандемии, влияя на здоровье, экономику и образ жизни людей.
+        </p>
+    </div>
+</section>
+
+<!-- ЧТО ТАКОЕ ВИРУСЫ -->
+<section id="virus" class="blue">
+    <div class="slide-content">
+        <div>
+            <h2>Что такое вирусы?</h2>
+            <p>
+                Вирусы — это ультрамикроскопические инфекционные агенты,
+                не имеющие клеточного строения и размножающиеся только внутри живых клеток.
+            </p>
+            <ul>
+                <li>Состоят из ДНК или РНК</li>
+                <li>Поражают органы и системы организма</li>
+                <li>Обладают высокой изменчивостью</li>
+                <li>Передаются различными путями</li>
+            </ul>
+        </div>
+        <img src="img/virus-structure.png"
+             class="virus-structure"
+             alt="Строение вируса">
+    </div>
+</section>
+
+<!-- ОПАСНОСТЬ -->
+<section id="danger" class="bg" style="background-image:url('img/danger.jpg')">
+    <div class="overlay">
+        <h2>Почему вирусы опасны?</h2>
+        <ul>
+            <li>Быстро распространяются</li>
+            <li>Вызывают осложнения</li>
+            <li>Могут мутировать</li>
+            <li>Создают нагрузку на здравоохранение</li>
+            <li>Особенно опасны для уязвимых групп</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ПРОФИЛАКТИКА -->
+<section id="prevention" class="green">
+    <div class="slide-content">
+        <div>
+            <h2>Профилактика вирусных заболеваний</h2>
+            <ul>
+                <li>Мытьё рук и антисептики</li>
+                <li>Ношение масок</li>
+                <li>Вакцинация</li>
+                <li>Избегание контакта с больными</li>
+                <li>Здоровый образ жизни</li>
+            </ul>
+        </div>
+        <img src="img/prevention.png"
+             class="prevention-img"
+             alt="Профилактика">
+    </div>
+</section>
+
+<footer>
+    Индивидуальный итоговый проект • 2026
+</footer>
+
+</body>
+</html>
